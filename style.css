@@ -1,3 +1,7 @@
+html {
+      cursor: url(./img/icons8-cursor-32.png), default;
+
+}
 body {
     background-color: rgb(43, 43, 43);
     color: white;
@@ -6,21 +10,48 @@ body {
     max-width: 720px;
     justify-content: center;
     margin-left:auto;
-    margin-right:auto;
+    margin-right:auto;    
 }
 
 .titolo {
-  font-size: min(12px, 3vh);
+  font-size: min(13px, 3vh);
   text-align: center;
-  margin: 10px;
+  margin: 0;
   color: rgb(186, 186, 186);
 }
 
+
 .sottotitolo {
   margin: 6px;
-  font-size: 10px;
+  font-size: 12px;
   color: rgb(156, 156, 156);
   text-align: center;
+}
+
+.sottotitolo2 {
+  margin: 6px;
+  font-size: 8px;
+  color: rgb(156, 156, 156);
+  text-align: center;
+}
+
+
+.titolo:hover {
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  color: red;
+}
+
+.sottotitolo:hover {
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  color: yellow;
+}
+
+.sottotitolo2:hover {
+  -webkit-transition: color 1s;
+  transition: color 0.5s;
+  color: rgb(0, 255, 0);
 }
 
 a {
@@ -28,14 +59,17 @@ a {
   color: white;
 }
 
-
-
+a:hover {
+  color: red;
+  transition: 0.3s;
+}
 
 
 /* INIZIO TABELLA */
 .tabella {
     width: 100%;
     text-align: left;
+    
 }
 
 
@@ -47,9 +81,9 @@ a {
     background-color: rgb(79, 79, 79);
     color: white;
     width: 38%;
-    max-width: 246px;
     text-justify: auto;
     vertical-align: top;
+    
 }
 
 .boxfoto {
@@ -59,12 +93,14 @@ a {
     margin-left: 10%;
     margin-right: 10%;
     font-size: xx-small;
+    
 }
 
 .foto {
     width: 100%;
     border-radius: 47%;
     min-height: 120px;
+    transition: 2s;
 }
 
 .boxtitolo {
@@ -76,23 +112,30 @@ a {
   font-weight: bold;
 }
 
+  
 .boxpercentuale {
   padding-left: 15px;
   padding-right: 10px;
 }
 
 .boxcompetenze {
+  width: 100%;
   font-size: min(9px, 2vw);
 }
 
+.boxcompetenze:hover {
+  color: rgb(255, 255, 0);
+}
 
 
 /* INIZIO PERCENTUALI */
 
 .percentuale {
   background-color: rgb(160, 88, 88) ;
+  border: 1px solid black;
   width: 30px;
 }
+
 .percentuale100 {
     margin-right: 6%;
     border: 1px solid white;
@@ -122,6 +165,41 @@ a {
   border: 1px solid white;
 }
 
+.percentualedx {
+  background-color: lightgray;
+  border: 1px solid gray;
+  width: 80%;
+}
+
+.percentualedx100 {
+  margin-right: 6%;
+  border: 1px solid darkslategray;
+}
+.percentualedx80 {
+  margin-right: 20%;
+  border: 1px solid darkslategray;
+}
+.percentualedx60 {
+margin-right: 40%;
+border: 1px solid darkslategray;
+}
+.percentualedx50 {
+margin-right: 50%;
+border: 1px solid darkslategray;
+}
+.percentualedx40 {
+margin-right: 60%;
+border: 1px solid darkslategray;
+}
+.percentualedx20 {
+margin-right: 80%;
+border: 1px solid darkslategray;
+}
+.percentualedx0 {
+margin-right: 99%;
+border: 1px solid darkslategray;
+}
+
 /* FINE PERCENTUALI */
 
 
@@ -145,6 +223,7 @@ a {
     margin-right: 10px;
     margin-left: 10px;
     text-justify: inter-word;
+    transition: 4s;
 }
 
 .nomecognome {
@@ -177,6 +256,7 @@ a {
   margin-bottom: 10px;
   color: rgb(171, 171, 171);
   font-family: monospace ;
+  
 }
 
 .intestazione {
@@ -197,6 +277,7 @@ a {
 .azienda {
   color: rgb(167, 167, 167);
   font-size: min(12px, 1.6vw);
+  font-weight: 580;
 }
 
 .testo {
@@ -214,7 +295,9 @@ a {
 
 
 /* FINE TABELLA */
+
 /*
 table, td, tr, .boxfoto {
   border: 1px red solid;
-}*/
+}
+*/
